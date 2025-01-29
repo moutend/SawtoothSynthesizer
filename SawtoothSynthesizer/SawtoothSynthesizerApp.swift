@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SawtoothSynthesizerApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  @StateObject private var hostModel = AudioUnitHostModel()
+
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+        .environmentObject(self.hostModel)
     }
+  }
 }

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA61E68A2D4A30EE00C08C8A /* AudioUnitHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6892D4A30EE00C08C8A /* AudioUnitHostModel.swift */; };
+		BA61E68C2D4A314F00C08C8A /* AudioUnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E68B2D4A314F00C08C8A /* AudioUnitViewModel.swift */; };
+		BA61E68E2D4A31CE00C08C8A /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E68D2D4A31CE00C08C8A /* ViewControllerRepresentable.swift */; };
+		BA61E6902D4A322100C08C8A /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E68F2D4A322100C08C8A /* StringHelpers.swift */; };
+		BA61E6922D4A326200C08C8A /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6912D4A326200C08C8A /* MIDIManager.swift */; };
+		BA61E6942D4A32B100C08C8A /* SimplePlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6932D4A32B100C08C8A /* SimplePlayEngine.swift */; };
 		BACB626D2D4A2E1F0057D4A4 /* SawtoothSynthesizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACB626C2D4A2E1F0057D4A4 /* SawtoothSynthesizerApp.swift */; };
 		BACB626F2D4A2E1F0057D4A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACB626E2D4A2E1F0057D4A4 /* ContentView.swift */; };
 		BACB62712D4A2E200057D4A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACB62702D4A2E200057D4A4 /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA61E6892D4A30EE00C08C8A /* AudioUnitHostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitHostModel.swift; sourceTree = "<group>"; };
+		BA61E68B2D4A314F00C08C8A /* AudioUnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewModel.swift; sourceTree = "<group>"; };
+		BA61E68D2D4A31CE00C08C8A /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		BA61E68F2D4A322100C08C8A /* StringHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
+		BA61E6912D4A326200C08C8A /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		BA61E6932D4A32B100C08C8A /* SimplePlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayEngine.swift; sourceTree = "<group>"; };
 		BACB62692D4A2E1F0057D4A4 /* SawtoothSynthesizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SawtoothSynthesizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACB626C2D4A2E1F0057D4A4 /* SawtoothSynthesizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SawtoothSynthesizerApp.swift; sourceTree = "<group>"; };
 		BACB626E2D4A2E1F0057D4A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +44,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA61E6832D4A302900C08C8A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E6882D4A309500C08C8A /* UI */,
+				BA61E6872D4A307E00C08C8A /* String */,
+				BA61E6862D4A306C00C08C8A /* MIDI */,
+				BA61E6852D4A305C00C08C8A /* Audio */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BA61E6842D4A304100C08C8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E6892D4A30EE00C08C8A /* AudioUnitHostModel.swift */,
+				BA61E68B2D4A314F00C08C8A /* AudioUnitViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA61E6852D4A305C00C08C8A /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E6932D4A32B100C08C8A /* SimplePlayEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		BA61E6862D4A306C00C08C8A /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E6912D4A326200C08C8A /* MIDIManager.swift */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		BA61E6872D4A307E00C08C8A /* String */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E68F2D4A322100C08C8A /* StringHelpers.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		BA61E6882D4A309500C08C8A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E68D2D4A31CE00C08C8A /* ViewControllerRepresentable.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		BACB62602D4A2E1F0057D4A4 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				BACB626C2D4A2E1F0057D4A4 /* SawtoothSynthesizerApp.swift */,
+				BA61E6842D4A304100C08C8A /* Model */,
+				BA61E6832D4A302900C08C8A /* Common */,
 				BACB626E2D4A2E1F0057D4A4 /* ContentView.swift */,
 				BACB62702D4A2E200057D4A4 /* Assets.xcassets */,
 				BACB62722D4A2E200057D4A4 /* Preview Content */,
@@ -137,8 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA61E6922D4A326200C08C8A /* MIDIManager.swift in Sources */,
+				BA61E68A2D4A30EE00C08C8A /* AudioUnitHostModel.swift in Sources */,
+				BA61E68C2D4A314F00C08C8A /* AudioUnitViewModel.swift in Sources */,
+				BA61E6902D4A322100C08C8A /* StringHelpers.swift in Sources */,
+				BA61E68E2D4A31CE00C08C8A /* ViewControllerRepresentable.swift in Sources */,
 				BACB626F2D4A2E1F0057D4A4 /* ContentView.swift in Sources */,
 				BACB626D2D4A2E1F0057D4A4 /* SawtoothSynthesizerApp.swift in Sources */,
+				BA61E6942D4A32B100C08C8A /* SimplePlayEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
