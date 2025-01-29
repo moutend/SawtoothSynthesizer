@@ -27,6 +27,7 @@
 		BA61E6C12D4A477800C08C8A /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6C02D4A477800C08C8A /* ObservableAUParameter.swift */; };
 		BA61E6C32D4A477800C08C8A /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6C22D4A477800C08C8A /* AudioUnitViewController.swift */; };
 		BA61E6C72D4A477800C08C8A /* Synth.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BA61E6992D4A477800C08C8A /* Synth.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BA7A003B2D4A589200748184 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BA7A003A2D4A589200748184 /* README.md */; };
 		BACB626D2D4A2E1F0057D4A4 /* SawtoothSynthesizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACB626C2D4A2E1F0057D4A4 /* SawtoothSynthesizerApp.swift */; };
 		BACB626F2D4A2E1F0057D4A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACB626E2D4A2E1F0057D4A4 /* ContentView.swift */; };
 		BACB62712D4A2E200057D4A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACB62702D4A2E200057D4A4 /* Assets.xcassets */; };
@@ -84,6 +85,7 @@
 		BA61E6C22D4A477800C08C8A /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
 		BA61E6C42D4A477800C08C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA7A00392D4A50E700748184 /* SawtoothSynthesizer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SawtoothSynthesizer.entitlements; sourceTree = "<group>"; };
+		BA7A003A2D4A589200748184 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BACB62692D4A2E1F0057D4A4 /* SawtoothSynthesizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SawtoothSynthesizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACB626C2D4A2E1F0057D4A4 /* SawtoothSynthesizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SawtoothSynthesizerApp.swift; sourceTree = "<group>"; };
 		BACB626E2D4A2E1F0057D4A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 		BACB62602D4A2E1F0057D4A4 = {
 			isa = PBXGroup;
 			children = (
+				BA7A003A2D4A589200748184 /* README.md */,
 				BACB626B2D4A2E1F0057D4A4 /* SawtoothSynthesizer */,
 				BA61E69A2D4A477800C08C8A /* Synth */,
 				BACB626A2D4A2E1F0057D4A4 /* Products */,
@@ -398,6 +401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA7A003B2D4A589200748184 /* README.md in Resources */,
 				BACB62742D4A2E200057D4A4 /* Preview Assets.xcassets in Resources */,
 				BACB62712D4A2E200057D4A4 /* Assets.xcassets in Resources */,
 			);
