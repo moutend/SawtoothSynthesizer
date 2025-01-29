@@ -13,11 +13,49 @@
 		BA61E6902D4A322100C08C8A /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E68F2D4A322100C08C8A /* StringHelpers.swift */; };
 		BA61E6922D4A326200C08C8A /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6912D4A326200C08C8A /* MIDIManager.swift */; };
 		BA61E6942D4A32B100C08C8A /* SimplePlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6932D4A32B100C08C8A /* SimplePlayEngine.swift */; };
+		BA61E69C2D4A477800C08C8A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BA61E69B2D4A477800C08C8A /* README.md */; };
+		BA61E6A12D4A477800C08C8A /* ParameterSpecBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6A02D4A477800C08C8A /* ParameterSpecBase.swift */; };
+		BA61E6A42D4A477800C08C8A /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6A32D4A477800C08C8A /* CrossPlatform.swift */; };
+		BA61E6A62D4A477800C08C8A /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6A52D4A477800C08C8A /* String+Utils.swift */; };
+		BA61E6AA2D4A477800C08C8A /* SynthAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6A92D4A477800C08C8A /* SynthAudioUnit.mm */; };
+		BA61E6AD2D4A477800C08C8A /* SynthAUProcessHelper.hpp in Resources */ = {isa = PBXBuildFile; fileRef = BA61E6AC2D4A477800C08C8A /* SynthAUProcessHelper.hpp */; };
+		BA61E6B12D4A477800C08C8A /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6B02D4A477800C08C8A /* Parameters.swift */; };
+		BA61E6B52D4A477800C08C8A /* SynthDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = BA61E6B42D4A477800C08C8A /* SynthDSPKernel.hpp */; };
+		BA61E6B82D4A477800C08C8A /* SynthMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6B72D4A477800C08C8A /* SynthMainView.swift */; };
+		BA61E6BA2D4A477800C08C8A /* ParameterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6B92D4A477800C08C8A /* ParameterSlider.swift */; };
+		BA61E6BF2D4A477800C08C8A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA61E6BD2D4A477800C08C8A /* MainInterface.storyboard */; };
+		BA61E6C12D4A477800C08C8A /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6C02D4A477800C08C8A /* ObservableAUParameter.swift */; };
+		BA61E6C32D4A477800C08C8A /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61E6C22D4A477800C08C8A /* AudioUnitViewController.swift */; };
+		BA61E6C72D4A477800C08C8A /* Synth.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BA61E6992D4A477800C08C8A /* Synth.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BACB626D2D4A2E1F0057D4A4 /* SawtoothSynthesizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACB626C2D4A2E1F0057D4A4 /* SawtoothSynthesizerApp.swift */; };
 		BACB626F2D4A2E1F0057D4A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACB626E2D4A2E1F0057D4A4 /* ContentView.swift */; };
 		BACB62712D4A2E200057D4A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACB62702D4A2E200057D4A4 /* Assets.xcassets */; };
 		BACB62742D4A2E200057D4A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BACB62732D4A2E200057D4A4 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA61E6C52D4A477800C08C8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BACB62612D4A2E1F0057D4A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA61E6982D4A477800C08C8A;
+			remoteInfo = Synth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BA61E6CB2D4A477800C08C8A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BA61E6C72D4A477800C08C8A /* Synth.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BA61E6892D4A30EE00C08C8A /* AudioUnitHostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitHostModel.swift; sourceTree = "<group>"; };
@@ -26,6 +64,25 @@
 		BA61E68F2D4A322100C08C8A /* StringHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
 		BA61E6912D4A326200C08C8A /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
 		BA61E6932D4A32B100C08C8A /* SimplePlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayEngine.swift; sourceTree = "<group>"; };
+		BA61E6992D4A477800C08C8A /* Synth.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Synth.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA61E69B2D4A477800C08C8A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BA61E69E2D4A477800C08C8A /* Synth-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Synth-Bridging-Header.h"; sourceTree = "<group>"; };
+		BA61E6A02D4A477800C08C8A /* ParameterSpecBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSpecBase.swift; sourceTree = "<group>"; };
+		BA61E6A32D4A477800C08C8A /* CrossPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
+		BA61E6A52D4A477800C08C8A /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		BA61E6A82D4A477800C08C8A /* SynthAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynthAudioUnit.h; sourceTree = "<group>"; };
+		BA61E6A92D4A477800C08C8A /* SynthAudioUnit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SynthAudioUnit.mm; sourceTree = "<group>"; };
+		BA61E6AC2D4A477800C08C8A /* SynthAUProcessHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SynthAUProcessHelper.hpp; sourceTree = "<group>"; };
+		BA61E6AF2D4A477800C08C8A /* SynthParameterAddresses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynthParameterAddresses.h; sourceTree = "<group>"; };
+		BA61E6B02D4A477800C08C8A /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		BA61E6B32D4A477800C08C8A /* SinOscillator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinOscillator.h; sourceTree = "<group>"; };
+		BA61E6B42D4A477800C08C8A /* SynthDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SynthDSPKernel.hpp; sourceTree = "<group>"; };
+		BA61E6B72D4A477800C08C8A /* SynthMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthMainView.swift; sourceTree = "<group>"; };
+		BA61E6B92D4A477800C08C8A /* ParameterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSlider.swift; sourceTree = "<group>"; };
+		BA61E6BE2D4A477800C08C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		BA61E6C02D4A477800C08C8A /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
+		BA61E6C22D4A477800C08C8A /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		BA61E6C42D4A477800C08C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BACB62692D4A2E1F0057D4A4 /* SawtoothSynthesizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SawtoothSynthesizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACB626C2D4A2E1F0057D4A4 /* SawtoothSynthesizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SawtoothSynthesizerApp.swift; sourceTree = "<group>"; };
 		BACB626E2D4A2E1F0057D4A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +91,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BA61E6962D4A477800C08C8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BACB62662D4A2E1F0057D4A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -96,10 +160,116 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		BA61E69A2D4A477800C08C8A /* Synth */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E69B2D4A477800C08C8A /* README.md */,
+				BA61E6C42D4A477800C08C8A /* Info.plist */,
+				BA61E69D2D4A477800C08C8A /* Common */,
+				BA61E6AE2D4A477800C08C8A /* Parameters */,
+				BA61E6B22D4A477800C08C8A /* DSP */,
+				BA61E6B62D4A477800C08C8A /* UI */,
+			);
+			path = Synth;
+			sourceTree = "<group>";
+		};
+		BA61E69D2D4A477800C08C8A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E69E2D4A477800C08C8A /* Synth-Bridging-Header.h */,
+				BA61E69F2D4A477800C08C8A /* Parameters */,
+				BA61E6A22D4A477800C08C8A /* Utility */,
+				BA61E6A72D4A477800C08C8A /* Audio Unit */,
+				BA61E6AB2D4A477800C08C8A /* DSP */,
+				BA61E6BB2D4A477800C08C8A /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BA61E69F2D4A477800C08C8A /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E6A02D4A477800C08C8A /* ParameterSpecBase.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		BA61E6A22D4A477800C08C8A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E6A32D4A477800C08C8A /* CrossPlatform.swift */,
+				BA61E6A52D4A477800C08C8A /* String+Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		BA61E6A72D4A477800C08C8A /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E6A82D4A477800C08C8A /* SynthAudioUnit.h */,
+				BA61E6A92D4A477800C08C8A /* SynthAudioUnit.mm */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		BA61E6AB2D4A477800C08C8A /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E6AC2D4A477800C08C8A /* SynthAUProcessHelper.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		BA61E6AE2D4A477800C08C8A /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E6AF2D4A477800C08C8A /* SynthParameterAddresses.h */,
+				BA61E6B02D4A477800C08C8A /* Parameters.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		BA61E6B22D4A477800C08C8A /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E6B32D4A477800C08C8A /* SinOscillator.h */,
+				BA61E6B42D4A477800C08C8A /* SynthDSPKernel.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		BA61E6B62D4A477800C08C8A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E6B72D4A477800C08C8A /* SynthMainView.swift */,
+				BA61E6B92D4A477800C08C8A /* ParameterSlider.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BA61E6BB2D4A477800C08C8A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E6C02D4A477800C08C8A /* ObservableAUParameter.swift */,
+				BA61E6C22D4A477800C08C8A /* AudioUnitViewController.swift */,
+				BA61E6BC2D4A477800C08C8A /* Base.lproj */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BA61E6BC2D4A477800C08C8A /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BA61E6BD2D4A477800C08C8A /* MainInterface.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
 		BACB62602D4A2E1F0057D4A4 = {
 			isa = PBXGroup;
 			children = (
 				BACB626B2D4A2E1F0057D4A4 /* SawtoothSynthesizer */,
+				BA61E69A2D4A477800C08C8A /* Synth */,
 				BACB626A2D4A2E1F0057D4A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				BACB62692D4A2E1F0057D4A4 /* SawtoothSynthesizer.app */,
+				BA61E6992D4A477800C08C8A /* Synth.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +307,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BA61E6982D4A477800C08C8A /* Synth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA61E6C82D4A477800C08C8A /* Build configuration list for PBXNativeTarget "Synth" */;
+			buildPhases = (
+				BA61E6952D4A477800C08C8A /* Sources */,
+				BA61E6962D4A477800C08C8A /* Frameworks */,
+				BA61E6972D4A477800C08C8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Synth;
+			productName = Synth;
+			productReference = BA61E6992D4A477800C08C8A /* Synth.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		BACB62682D4A2E1F0057D4A4 /* SawtoothSynthesizer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BACB62772D4A2E200057D4A4 /* Build configuration list for PBXNativeTarget "SawtoothSynthesizer" */;
@@ -143,10 +331,12 @@
 				BACB62652D4A2E1F0057D4A4 /* Sources */,
 				BACB62662D4A2E1F0057D4A4 /* Frameworks */,
 				BACB62672D4A2E1F0057D4A4 /* Resources */,
+				BA61E6CB2D4A477800C08C8A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BA61E6C62D4A477800C08C8A /* PBXTargetDependency */,
 			);
 			name = SawtoothSynthesizer;
 			productName = SawtoothSynthesizer;
@@ -163,6 +353,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					BA61E6982D4A477800C08C8A = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					BACB62682D4A2E1F0057D4A4 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -182,11 +375,23 @@
 			projectRoot = "";
 			targets = (
 				BACB62682D4A2E1F0057D4A4 /* SawtoothSynthesizer */,
+				BA61E6982D4A477800C08C8A /* Synth */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BA61E6972D4A477800C08C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA61E69C2D4A477800C08C8A /* README.md in Resources */,
+				BA61E6BF2D4A477800C08C8A /* MainInterface.storyboard in Resources */,
+				BA61E6AD2D4A477800C08C8A /* SynthAUProcessHelper.hpp in Resources */,
+				BA61E6B52D4A477800C08C8A /* SynthDSPKernel.hpp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BACB62672D4A2E1F0057D4A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,6 +404,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BA61E6952D4A477800C08C8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA61E6B12D4A477800C08C8A /* Parameters.swift in Sources */,
+				BA61E6A12D4A477800C08C8A /* ParameterSpecBase.swift in Sources */,
+				BA61E6C12D4A477800C08C8A /* ObservableAUParameter.swift in Sources */,
+				BA61E6AA2D4A477800C08C8A /* SynthAudioUnit.mm in Sources */,
+				BA61E6A42D4A477800C08C8A /* CrossPlatform.swift in Sources */,
+				BA61E6C32D4A477800C08C8A /* AudioUnitViewController.swift in Sources */,
+				BA61E6BA2D4A477800C08C8A /* ParameterSlider.swift in Sources */,
+				BA61E6B82D4A477800C08C8A /* SynthMainView.swift in Sources */,
+				BA61E6A62D4A477800C08C8A /* String+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BACB62652D4A2E1F0057D4A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,7 +437,82 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BA61E6C62D4A477800C08C8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA61E6982D4A477800C08C8A /* Synth */;
+			targetProxy = BA61E6C52D4A477800C08C8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA61E6BD2D4A477800C08C8A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA61E6BE2D4A477800C08C8A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		BA61E6C92D4A477800C08C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Synth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Synth;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SawtoothSynthesizer.Synth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Synth/Common/Synth-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA61E6CA2D4A477800C08C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Synth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Synth;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.SawtoothSynthesizer.Synth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Synth/Common/Synth-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		BACB62752D4A2E200057D4A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -334,6 +630,7 @@
 		BACB62782D4A2E200057D4A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +663,7 @@
 		BACB62792D4A2E200057D4A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +696,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BA61E6C82D4A477800C08C8A /* Build configuration list for PBXNativeTarget "Synth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA61E6C92D4A477800C08C8A /* Debug */,
+				BA61E6CA2D4A477800C08C8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BACB62642D4A2E1F0057D4A4 /* Build configuration list for PBXProject "SawtoothSynthesizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
