@@ -22,7 +22,7 @@ extension AVAudioUnit {
     return AVAudioUnitComponentManager.shared().components(matching: description).first
   }
   fileprivate func loadAudioUnitViewController(completion: @escaping (UIViewController?) -> Void) {
-    auAudioUnit.requestViewController { [weak self] viewController in
+    auAudioUnit.requestViewController { viewController in
       DispatchQueue.main.async {
         completion(viewController)
       }
@@ -46,7 +46,7 @@ class SimplePlayEngine {
       midiProtocol: MIDIProtocolID._2_0,
       receiveBlock: { [weak self] eventList, _ in
         if let scheduleMIDIEventListBlock = self?.scheduleMIDIEventListBlock {
-          scheduleMIDIEventListBlock(AUEventSampleTimeImmediate, 0, eventList)
+          _ = scheduleMIDIEventListBlock(AUEventSampleTimeImmediate, 0, eventList)
         }
       })
     {
@@ -110,10 +110,6 @@ class SimplePlayEngine {
     }
   }
   private func startPlayingInternal() {
-    guard let avAudioUnit = self.avAudioUnit else {
-      return
-    }
-
     self.setSessionActive(true)
 
     let hardwareFormat = self.engine.outputNode.outputFormat(forBus: 0)
@@ -131,10 +127,6 @@ class SimplePlayEngine {
     self.isPlaying = true
   }
   private func stopPlayingInternal() {
-    guard let avAudioUnit = self.avAudioUnit else {
-      return
-    }
-
     self.engine.stop()
     self.isPlaying = false
 

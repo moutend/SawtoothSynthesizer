@@ -29,7 +29,6 @@ public:
       mGates[i] = 0.0;
     }
   }
-  void setFrequency(double frequency) { mDeltaOmega = frequency / mSampleRate; }
   void noteOn(int noteIndex) {
     if (noteIndex < 0 || noteIndex > NumberOfPianoKeys - 1) {
       return;
@@ -83,8 +82,6 @@ public:
   }
 
 private:
-  double mOmega = {0.0};
-  double mDeltaOmega = {0.0};
   double mSampleRate = {0.0};
   double mDeltaOmegas[NumberOfPianoKeys];
   double mOmegas[NumberOfPianoKeys];

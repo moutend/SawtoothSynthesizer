@@ -87,7 +87,6 @@ public:
     // Generate per sample dsp before assigning it to out
     for (UInt32 frameIndex = 0; frameIndex < frameCount; ++frameIndex) {
       // Do your frame by frame dsp here...
-      // const auto sample = mSinOsc.process() * mNoteEnvelope * mGain;
       const auto sample = mSinOsc.process() * mGain;
       for (UInt32 channel = 0; channel < outputBuffers.size(); ++channel) {
         outputBuffers[channel][frameIndex] = sample;
@@ -131,18 +130,10 @@ public:
     const auto &note = message.channelVoice2.note;
     switch (message.channelVoice2.status) {
     case kMIDICVStatusNoteOff: {
-      // mNoteEnvelope = 0.0;
       mSinOsc.noteOff(note.number);
     } break;
     case kMIDICVStatusNoteOn: {
-      const auto velocity = message.channelVoice2.note.velocity;
-      const auto freqHertz = MIDINoteToFrequency(note.number);
-      // mSinOsc = SinOscillator(mSampleRate);
-      // Set frequency on per channel oscillator
       mSinOsc.noteOn(note.number);
-      // Use velocity to set amp envelope level
-      mNoteEnvelope =
-          (double)velocity / (double)std::numeric_limits<std::uint16_t>::max();
     } break;
     default:
       break;
@@ -152,7 +143,6 @@ public:
   AUHostMusicalContextBlock mMusicalContextBlock;
   double mSampleRate = 44100.0;
   double mGain = 1.0;
-  double mNoteEnvelope = 0.0;
   bool mBypassed = false;
   AUAudioFrameCount mMaxFramesToRender = 1024;
   SinOscillator mSinOsc;
