@@ -83,6 +83,7 @@
 		BA61E6C02D4A477800C08C8A /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
 		BA61E6C22D4A477800C08C8A /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
 		BA61E6C42D4A477800C08C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA7A00392D4A50E700748184 /* SawtoothSynthesizer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SawtoothSynthesizer.entitlements; sourceTree = "<group>"; };
 		BACB62692D4A2E1F0057D4A4 /* SawtoothSynthesizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SawtoothSynthesizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACB626C2D4A2E1F0057D4A4 /* SawtoothSynthesizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SawtoothSynthesizerApp.swift; sourceTree = "<group>"; };
 		BACB626E2D4A2E1F0057D4A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -286,6 +287,7 @@
 		BACB626B2D4A2E1F0057D4A4 /* SawtoothSynthesizer */ = {
 			isa = PBXGroup;
 			children = (
+				BA7A00392D4A50E700748184 /* SawtoothSynthesizer.entitlements */,
 				BACB626C2D4A2E1F0057D4A4 /* SawtoothSynthesizerApp.swift */,
 				BA61E6842D4A304100C08C8A /* Model */,
 				BA61E6832D4A302900C08C8A /* Common */,
@@ -633,6 +635,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SawtoothSynthesizer/SawtoothSynthesizer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SawtoothSynthesizer/Preview Content\"";
@@ -666,6 +669,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SawtoothSynthesizer/SawtoothSynthesizer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SawtoothSynthesizer/Preview Content\"";
