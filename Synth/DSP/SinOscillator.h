@@ -9,7 +9,7 @@
 #include <cmath>
 #include <numbers>
 
-// 0から127の範囲外のノートナンバーを受信できてしまうため制限する。
+// Restrict note numbers outside the range of 0 to 127.
 constexpr int NumberOfPianoKeys = 127;
 constexpr double Pi2 = 2.0 * std::numbers::pi_v<double>;
 
